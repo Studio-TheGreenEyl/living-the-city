@@ -36,7 +36,7 @@ void setup() {
   output = createGraphics(568, 320);
   comp = createGraphics(width, height);
 
-  video = new Movie(this, "sample.mp4");
+  video = new Movie(this, "sample2.mp4");
   opencv = new OpenCV(this, 568, 320);
 
   video.loop();
@@ -115,7 +115,7 @@ void calcIntermediate() {
 
 void calcOutput() {
   output.beginDraw();
-  output.tint(255, 180);
+  //output.tint(255, 180);
   // motion blur attempt #1
   output.image(p.get((int)pos.x, (int)pos.y, 568, 320), 0, 0);
   output.endDraw();
