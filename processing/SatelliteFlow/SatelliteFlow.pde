@@ -28,9 +28,19 @@ float _kmPrevFiltered[] = new float[2];
 
 boolean firstLoop = true;
 
+PVector blurVec = new PVector(1, 0); 
+int blurSize = 31;
+float blurAngle = 0;
+
+// passable motion blur
+int samplesPerFrame = 32;
+float shutterAngle = 2.0;
+int[][] result;
+
 void setup() {
   size(1704, 320);
   surface.setLocation(0, 0);
+
   input = createGraphics(568, 320);
   intermediate = createGraphics(568, 320);
   output = createGraphics(568, 320);
@@ -57,6 +67,8 @@ void setup() {
   _kmProcessNoise = 0.05;
   _kmSensorNoise = 7;
   //_kmPrevFiltered[[ = 0;
+  
+  result = new int[output.width*output.height][3];
 }
 
 void draw() {
@@ -108,16 +120,14 @@ void calcIntermediate() {
     intermediate.translate(intermediate.width/2, intermediate.height/2);
     intermediate.line(0, 0, flow.x*flowScale, flow.y*flowScale);
     intermediate.endDraw();
-
-
   }
 }
 
 void calcOutput() {
+  PImage _p = p.get((int)pos.x, (int)pos.y, 568, 320);
   output.beginDraw();
-  //output.tint(255, 180);
-  // motion blur attempt #1
-  output.image(p.get((int)pos.x, (int)pos.y, 568, 320), 0, 0);
+    
+  output.image(_p, 0, 0);
   output.endDraw();
 }
 
