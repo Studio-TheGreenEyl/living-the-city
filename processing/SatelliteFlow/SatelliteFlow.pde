@@ -34,8 +34,10 @@ float blurAngle = 0;
 
 // passable motion blur
 int samplesPerFrame = 32;
-float shutterAngle = 2.0;
+float shutterAngle = 1.0;
 int[][] result;
+int numFrames = 445;    
+float time;
 
 void setup() {
   size(1704, 320);
@@ -46,7 +48,7 @@ void setup() {
   output = createGraphics(568, 320);
   comp = createGraphics(width, height);
 
-  video = new Movie(this, "sample2.mp4");
+  video = new Movie(this, "sample3.mp4");
   opencv = new OpenCV(this, 568, 320);
 
   video.loop();
@@ -77,6 +79,7 @@ void draw() {
   calcInput();  
   calcIntermediate();
   calcOutput();
+  
 
   // draw
   comp.beginDraw();
@@ -123,12 +126,36 @@ void calcIntermediate() {
   }
 }
 
-void calcOutput() {
+void getOutput() {
+  
   PImage _p = p.get((int)pos.x, (int)pos.y, 568, 320);
   output.beginDraw();
-    
   output.image(_p, 0, 0);
   output.endDraw();
+}
+
+void calcOutput() {
+  for (int i=0; i<output.width*output.height; i++)
+    for (int a=0; a<3; a++)
+      result[i][a] = 0;
+
+  for (int sa = 0; sa<samplesPerFrame; sa++) {
+    time = map(frameCount + sa*shutterAngle/samplesPerFrame, 0, numFrames, 0, 1);
+    getOutput();
+    //image(output, 1136, 0);
+    output.loadPixels();
+    for (int i=0; i<output.pixels.length; i++) {
+      result[i][0] += output.pixels[i] >> 16 & 0xff;
+      result[i][1] += output.pixels[i] >> 8 & 0xff;
+      result[i][2] += output.pixels[i] & 0xff;
+    }
+  }
+
+  output.loadPixels();
+  for (int i=0; i<output.pixels.length; i++)
+    output.pixels[i] = (result[i][0]/samplesPerFrame) << 16 | 
+      (result[i][1]/samplesPerFrame) << 8 | (result[i][2]/samplesPerFrame);
+  output.updatePixels();
 }
 
 float filtered(int i, float prev, float currentValue, float q, float r) {
