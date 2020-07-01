@@ -1,2 +1,2 @@
-# superblocks
-spatial media installation
+# Living the City
+spatial media installations git repository
