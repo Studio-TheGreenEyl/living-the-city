@@ -1,5 +1,8 @@
 .DS_Store
-processing/SatelliteFlow/data/*.MOV
 *.MOV
+processing/SatelliteFlow/data/*.MOV
 processing/SatelliteFlow/exports/
 processing/OpticalFlow/exports/
+superblocks/processing/SatelliteFlow/data/*.MOV
+superblocks/processing/SatelliteFlow/exports/
+superblocks/processing/OpticalFlow/exports/
