@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Test4KVideo" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="IvSr7zB4mm.Test4KVideo" package="IvSr7zB4mm" required_version="2.1"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.2160.3840"/>
+    
+    <icon src="icon.png"/>
+    <name>Test4KVideo</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <access origin="*" subdomains="true"/>
+    <tizen:privilege name="http://tizen.org/privilege/callhistory.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+	<tizen:privilege name="http://tizen.org/privilege/externalstorage"/>
+	
+	
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
