@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('assets/Theinhardt-Medium.woff2') format('woff2'),
+        url('assets/Theinhardt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('assets/Theinhardt-Regular.woff2') format('woff2'),
+        url('assets/Theinhardt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'Theinhardt';
+    font-weight: 500;
+    font-size: 40pt;
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    /*display: inline-block;*/
+    width: 100%;
+    /*margin: 0 auto;*/
+    
+}
+
+.noBox {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    /*display: inline-block;*/
+    border: 3px solid #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.item {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    /*display: inline-block;*/
+    border: 3px solid #000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.isActive {
+    background-color: #000;
+    color: #fff;
+
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.isActive a {
+    color: #fff;
+}
+
+/** solved by flexbox **/
+.Aligner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.Aligner-item {
+  max-width: 100%;
+  width: 100%;
+}
+
+.Aligner-item--fixed {
+  flex: none;
+  max-width: 100%;
+}
