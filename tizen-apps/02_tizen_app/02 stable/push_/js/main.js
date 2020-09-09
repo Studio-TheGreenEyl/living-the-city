@@ -1,6 +1,6 @@
 var volume = 0.75;
 window.onload = function() {
-    var serverPage = 'http://192.168.178.129/tizen/server_event.php';
+    var serverPage = 'http://192.168.178.129/tizen/server_event.php?output=volume.txt';
     var eventSource = new EventSource(serverPage);
     var log = document.getElementById('log');
 
