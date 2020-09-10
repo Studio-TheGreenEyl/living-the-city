@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "filename": "momente.mp4",
+    "length": "30",
+    "sub_en" : "momente_en.vtt",
+    "sub_de" : "momente_de.vtt",
+  },
+  {
+    "id": 1,
+    "filename": "sonne.mp4",
+    "length": "30",
+    "sub_en" : "sonne_en.vtt",
+    "sub_de" : "sonne_de.vtt",
+  },
+  {
+    "id": 2,
+    "filename": "bodies.mp4",
+    "length": "30",
+    "sub_en" : "bodies_en.vtt",
+    "sub_de" : "bodies_de.vtt",
+  }
+]
