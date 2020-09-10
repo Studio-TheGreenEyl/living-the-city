@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  -->
-	<meta name='viewport' content='width=3840, user-scalable=no'>
-	<meta name="description" content="TheGreenEyl Technologies - Sync App"/>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  -->
+		<meta name='viewport' content='width=3840, user-scalable=no' />
+		<meta name="description" content="TheGreenEyl Technologies - Sync App" />
 
-	<title>4K Test via HTML5 Video Tag</title>
-	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<!--  <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js"></script> -->
-	<script src="js/main.js"></script>
-</head>
-<body>
-	<!--   <video id="myVideo" src="http://192.168.178.135/momente.mp4#t=90" 	preload="auto"   loop autoplay></video> -->
-	<!--  <video id="myVideo" src="http://dev.thegreeneyl.com/tizen/4ktest_red_border_loop.mkv" 	preload="auto" autoplay loop autoplay></video> -->
-<!-- 	<div class="video-container">
-		<video id="myVideo" src="http://dev.thegreeneyl.com/tizen/tge_t4.mp4" preload="auto" autoplay loop autoplay></video>
-	</div> -->
-	<video id="myVideo" src="/opt/media/USBDriveA1/momente.mp4" 	preload="auto"   autoplay onloadstart="this.volume=0.75" >
-		<track src="/opt/media/USBDriveA1/de.vtt" kind="subtitles" srclang="de" label="Germs" default>
-       <track src="/opt/media/USBDriveA1/en.vtt" kind="subtitles" srclang="en" label="English">
-       </video>
-	<div id="log"></div>
-</body>
+		<title>tge.tizen</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/tge.variables.js"></script>
+		<script src="js/tge.video_handling.js"></script>
+		<script src="js/tge.file_handling.js"></script>
+		<script src="js/tge.state_machine.js"></script>
+		<script src="js/tge.main.js"></script>
+	</head>
+	<body id="body">
+		<!--  <video id="myVideo" src="http://192.168.178.135/momente.mp4#t=90" 	preload="auto"   loop autoplay></video> -->
+		<!--  <video id="myVideo" src="http://dev.thegreeneyl.com/tizen/4ktest_red_border_loop.mkv" 	preload="auto" autoplay loop autoplay></video> -->
+		<!--  <div class="video-container">
+			<video id="myVideo" src="http://dev.thegreeneyl.com/tizen/tge_t4.mp4" preload="auto" autoplay loop autoplay></video>
+		</div> -->
+		<div class="video-container">
+			<video id="myVideo" src="" 	preload="auto"   autoplay onloadstart="this.volume=0.75"></video>
+		</div>
+    		<div id="translation">
+    			<ul>
+    				<li id="lang_1">de</li>
+    				<li id="lang_0">en</li>
+    			</ul>
+    		</div>
+		<!--  <div id="log"></div>  -->
+	</body>
 </html>
