@@ -33,13 +33,19 @@
 ?>
 
 <?php
+	$output = "";
+	if(isset($_GET['output'])) {
+		$output = $_GET['output'];
+	} else $output = "volume.txt";
+
 	require_once("functions.php");
 	
    	header('Content-Type: text/event-stream');
    	header('Cache-Control: no-cache');
 
    	echo "retry: 1000\n\n"; /* Reconnection interval */
-   	echo "data: ". readCommand() ."\n\n";
+   	if($output == "command.txt") echo "data: ". readCommand($output) ."-". floor(microtime(true)) ."\n\n";
+   	else echo "data: ". readCommand($output) ."\n\n";
 
    	flush();
 ?>

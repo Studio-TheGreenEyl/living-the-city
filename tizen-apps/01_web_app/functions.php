@@ -1,10 +1,15 @@
 <?php
 	function setVolume($vol) {
-		writeCommand($vol);
+		writeCommand($vol, "volume.txt");
 	}
 
-	function writeCommand($cmd) {
-		$filename = 'command.txt';
+	function control($vol) {
+		$microtime = floor(microtime(true));
+		writeCommand($vol."-".$microtime, "command.txt");
+	}
+
+	function writeCommand($cmd, $fn) {
+		$filename = $fn;
 		if (is_writable($filename)) {
 		    if (!$handle = fopen($filename, "w+")) {
 		         print "Kann die Datei $filename nicht öffnen";
@@ -20,8 +25,9 @@
 		}
 	}
 
-	function readCommand() {
-		$filename = "command.txt";
+	function readCommand($fn) {
+		//$filename = "volume.txt";
+		$filename = $fn;
 		$handle = fopen($filename, "r");
 		$contents = fread($handle, filesize($filename));
 		fclose($handle);
