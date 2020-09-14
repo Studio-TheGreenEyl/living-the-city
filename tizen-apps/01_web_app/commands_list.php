@@ -1,10 +1,28 @@
 <?php
 	// translate cmd into human readable string for displaying purposes
+	$volumeLevels = 20; // 20 abstufungen in der lautstärke, mit jeweils 5% unterschied
 	$cmd_translate = array(
+		// don't put any entries before this one or it will break the for-loop in interface.php
 		"vol-100" => "100%",
+		"vol-95" => "95%",
+		"vol-90" => "90%",
+		"vol-85" => "85%",
+		"vol-80" => "80%",
 		"vol-75" => "75%",
+		"vol-70" => "70%",
+		"vol-65" => "65%",
+		"vol-60" => "60%",
+		"vol-55" => "55%",
 		"vol-50" => "50%",
+		"vol-45" => "45%",
+		"vol-40" => "40%",
+		"vol-35" => "35%",
+		"vol-30" => "30%",
 		"vol-25" => "25%",
+		"vol-20" => "20%",
+		"vol-15" => "15%",
+		"vol-10" => "10%",
+		"vol-5" => "5%",
 		"vol-0" => "0%",
 
 		"pause" => "Pause",
