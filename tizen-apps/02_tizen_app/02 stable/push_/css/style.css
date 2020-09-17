@@ -45,6 +45,26 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'LKEuropaGroteskCity';
+    src: url('assets/LKEuropaGroteskCity-Medium.woff2') format('woff2'),
+        url('assets/LKEuropaGroteskCity-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LKEuropaGroteskCity';
+    src: url('assets/LKEuropaGroteskCity-Bold.woff2') format('woff2'),
+        url('assets/LKEuropaGroteskCity-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 
 * {
@@ -53,13 +73,55 @@
      box-sizing: border-box;
 }
 
-#fallback {
+#fallback_en {
+	font-family: 'LKEuropaGroteskCity';
 	position: absolute;
 	top: 50px;
 	left: 50px;
 	color: #ffffff;
 	font-size: 200pt;
-	font-weight: 500;
+	font-weight: bold;
+	line-height: 170pt;
+	letter-spacing: -8px;
+}
+
+#fallback_de {
+	font-family: 'LKEuropaGroteskCity';
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	color: #ffffff;
+	font-size: 200pt;
+	font-weight: bold;
+	line-height: 170pt;
+	letter-spacing: -8px;
+	text-align: right;
+}
+
+#fallback_claim_de {	
+	font-family: 'LKEuropaGroteskCity';
+	position: absolute;
+	top: 333px;
+	left: 630px;
+	color: #ffffff;
+	font-size: 40pt;
+	font-weight: bold;
+	line-height: 42pt;
+	transition: opacity 750ms ease-in-out;
+	
+}
+
+#fallback_claim_en {
+	font-family: 'LKEuropaGroteskCity';
+	position: absolute;
+	top: 333px;
+	left: 630px;
+	color: #ffffff;
+	font-size: 40pt;
+	font-weight: bold;
+	line-height: 42pt;
+	transition: opacity 750ms ease-in-out;
+	
 }
 
 /* override browser default */
@@ -152,3 +214,17 @@ body {
 	text-shadow: 4px 4px 5px #000000;
     
   }
+  
+/* thumbnail */
+#thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/opt/media/USBDriveA1/default_play.jpg');
+}
+
+#thumbnail.hidden {
+	top: -9000px
+}

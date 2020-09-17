@@ -25,3 +25,10 @@ var commandPage = 'http://192.168.178.129/tizen/server_event.php?output=command.
 var langSwitch = 0;
 var canSwitch = true;
 
+var resetOnce = true;
+var activeClaim = false;
+
+var autoplay = true;
+var state = 0; // 0 = wait, 1 = play
+var thumbnailPicked = false;
+var randomThumbnail = 0;

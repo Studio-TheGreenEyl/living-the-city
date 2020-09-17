@@ -64,10 +64,18 @@ function onsuccess(files) {
              console.log("The file content: ");
 //             json = str;
              json = JSON.parse(str);
+             
+             autoplay = json[0].autoplay;
+             //autoplay = true; // test debug
+             if(!autoplay) state = 0;
+             else state = 1;
+             setAutoplay(autoplay);
+             json = json[0].playlist;
              playlistLength = json.length;
              foundExternal = true;
-            
-             //console.log(json);
+             //console.log(playlistLength);
+             //console.log(json[0].autoplay);
+             
            }, function(e) {
              console.log("Error " + e.message);
            }, "UTF-8"

@@ -22,6 +22,13 @@ function playVideo() {
 	console.log("→ playing video from start");
 }
 
+function playVideo() {
+	var vid = document.getElementById("myVideo");
+	vid.play();
+	isPlaying = true;
+	console.log("→ playing video from start");
+}
+
 function pauseVideo() {
 	var vid = document.getElementById("myVideo");
 	vid.pause();
@@ -47,7 +54,35 @@ function setVolume(vol) {
 }
 
 function playList() {
-	
+	//console.log("autoplay: " + autoplay);
+	//state = 1;
+	if(state == 0 && !autoplay) {
+		//console.log("thumb");
+		//console.log(json[0]);
+		document.getElementById("thumbnail").removeAttribute("class");
+		var thumbnail = json[playlistIndex].thumbnail;
+		//var thumbs= json[playlistIndex].thumbnail;
+		if(thumbnail !== undefined) {
+			var isArray = Array.isArray(json[playlistIndex].thumbnail);
+			//console.log("isArray: "+ isArray);
+			if(!isArray) {
+				document.getElementById("thumbnail").style.backgroundImage = "url('"+ externalFullPath +"thumbnails/"+ json[playlistIndex].thumbnail +"')";
+			} else {
+				if(!thumbnailPicked) {
+					var size = json[playlistIndex].thumbnail.length;
+					randomThumbnail = Math.floor(Math.random() * size);
+					thumbnailPicked = true;
+				}
+				document.getElementById("thumbnail").style.backgroundImage = "url('"+ externalFullPath +"thumbnails/"+ json[playlistIndex].thumbnail[randomThumbnail] +"')";
+			}
+		} else {
+			document.getElementById("thumbnail").style.backgroundImage = "url('"+ externalFullPath +"default_play.jpg')";
+		}
+		return;
+	}
+	//class="hidden"
+	//document.getElementById("thumbnail").removeAttribute("class");
+	document.getElementById("thumbnail").setAttribute("class", "hidden");
 	if(!isPlaying && foundExternal) {
 		//console.log("debug → json: " + json);
 		//console.log("debug → playlistIndex: " + playlistIndex);
@@ -67,21 +102,56 @@ function playList() {
 		
 		
 		//console.log(playlistIndex);
-	} else if(!isPlaying && !foundExternal) {
+	} else if(!isPlaying && !foundExternal && resetOnce) {
 		//console.log("fallback video starten");
 		var trans = document.getElementById("translation");
 		trans.style.top = '-200px';
 		
 		//myVideo.src = "wgt-private/css/fallback.mp4";
-		document.getElementById("myVideo").remove();
+		var myVideo = document.getElementById("myVideo");
+		if(myVideo != null) document.getElementById("myVideo").remove();
 
 		var el = document.createElement('div');
-		el.setAttribute("id", "fallback");
-		el.innerHTML = "MediaStorage is<br />Missing";
+		el.setAttribute("id", "fallback_en");
+		//el.innerHTML = "MediaStorage is<br />Missing";
+		el.innerHTML = "Living the<br />City";
 		document.getElementById("body").appendChild(el);
-
+		
+		var el = document.createElement('div');
+		el.setAttribute("id", "fallback_de");
+		//el.innerHTML = "MediaStorage is<br />Missing";
+		el.innerHTML = "Stadt<br />leben&nbsp;&nbsp;";
+		document.getElementById("body").appendChild(el);
+		
+		resetOnce = false;
+		
+		var claim_de = "Eine Ausstellung<br />über Städte, Menschen<br />und Geschichten";
+		var claim_en = "An Exhibition<br />About Cities, People<br />and Stories";
+		var el = document.createElement('div');
+		el.setAttribute("id", "fallback_claim_de");
+		el.innerHTML = claim_de;
+		document.getElementById("body").appendChild(el);
+		
+		var el = document.createElement('div');
+		el.setAttribute("id", "fallback_claim_en");
+		el.innerHTML = claim_en;
+		el.style.opacity = 0;
+		document.getElementById("body").appendChild(el);
+		
+		setInterval(fadeClaims, 10000);
 	}
 	//putVideo(files[i].name);
+}
+
+function fadeClaims() {
+	activeClaim = !activeClaim;
+	if(activeClaim) {
+		  document.getElementById('fallback_claim_en').style.opacity = '0.0';
+		  document.getElementById('fallback_claim_de').style.opacity = '1.0';
+	} else {
+		document.getElementById('fallback_claim_en').style.opacity = '1.0';
+		  document.getElementById('fallback_claim_de').style.opacity = '0.0';
+	}
 }
 
 function purgeSubtitleElements() {

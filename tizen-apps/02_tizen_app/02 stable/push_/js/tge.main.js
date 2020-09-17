@@ -32,6 +32,8 @@ window.onload = function() {
     	  console.log('Video stopped either because 1) it was over, ' +
     	      'or 2) no further data is available.');
     	  isPlaying = false;
+    	  if(!autoplay) state = 0;
+    	  thumbnailPicked = false;
     	});
     
     if(foundPlaylist) {
@@ -55,6 +57,9 @@ window.onload = function() {
 
 
 function viewportClicker() {
+	if(state == 0 && !autoplay) {
+		state = 1;
+	}
 	if(!canSwitch) return;
 	console.log("viewportClicker:" + langSwitch);
 	var track0 = document.getElementById("lang_0_tr");
@@ -105,4 +110,9 @@ function activateTrack() {
 		track1.track.mode = "hidden";
 		track1.setAttribute("default", "false");
 	}
+}
+
+function setAutoplay(b) {
+	var videoTrack = document.getElementById("myVideo");
+	videoTrack.setAttribute("autoplay", b);
 }

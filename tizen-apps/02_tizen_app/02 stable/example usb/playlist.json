@@ -1,0 +1,47 @@
+[
+  {
+    "autoplay": false,
+    "playlist":
+    [
+      {
+        "id": 0,
+        "filename": "beach.mp4",
+        "length": "30"
+      },
+      {
+        "id": 4,
+        "filename": "mixed_messages.mp4",
+        "length": "30",
+        "sub_fr" : "mixed_messages_fr.vtt",
+        "thumbnail": "mixed_messages.jpg"
+      },
+      {
+        "id": 5,
+        "filename": "manifest.mp4",
+        "length": "30",
+        "sub_en" : "manifest_en.vtt",
+        "sub_de" : "manifest_de.vtt",
+        "thumbnail": "manifest.jpg"
+      },
+      {
+        "id": 6,
+        "filename": "sonne.mp4",
+        "length": "30",
+        "sub_en" : "sonne_en.vtt",
+        "sub_de" : "sonne_de.vtt",
+        "thumbnail": "sonne.jpg"
+      },
+      {
+        "id": 7,
+        "filename": "bodies.mp4",
+        "length": "30",
+        "sub_en" : "bodies_en.vtt",
+        "sub_de" : "bodies_de.vtt",
+        "thumbnail":
+          [
+          "bodies.jpg", "bodies2.jpg"
+          ]
+      }
+    ]
+  }
+]
