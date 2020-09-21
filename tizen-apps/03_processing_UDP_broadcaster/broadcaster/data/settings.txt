@@ -1,0 +1,8 @@
+volume=100
+playlist=shelley_p_b_2.mp3,shelley_p_b_1.mp3,test15.wav
+primary=true
+broadcastIP=192.168.15.255
+port=6000
+globalVolume=100
+syncInterval=1000
+pause=3000
