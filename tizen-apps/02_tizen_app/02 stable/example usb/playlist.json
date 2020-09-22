@@ -4,11 +4,6 @@
     "playlist":
     [
       {
-        "id": 0,
-        "filename": "beach.mp4",
-        "length": "30"
-      },
-      {
         "id": 4,
         "filename": "mixed_messages.mp4",
         "length": "30",
