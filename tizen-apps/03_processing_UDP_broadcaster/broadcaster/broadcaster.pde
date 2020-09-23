@@ -14,7 +14,7 @@ int index = 0;
 boolean primary = false;
 boolean udpSet = false;
 
-String hostURL = "http://192.168.15.2/apps/ltc-interface/server_event.php";
+String hostURL = "http://192.168.15.2/server_event.php";
 String[] lines;
 long timestamp = 0;
 long syncInterval = 2000;
