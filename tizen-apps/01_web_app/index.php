@@ -13,6 +13,7 @@
 		header('Location: index.php');
 	else:
 		$currentVol = readCommand("volume.txt");
+		$soundscapeVol = readCommand("soundscape.txt");
 		/*
 		switch($currentVol) {
 			case "vol-100":				$activeVol[0] = "isActive";			break;
@@ -25,6 +26,12 @@
 		for($i = 0; $i<$volumeLevels; $i++) {
 			if($currentVol == $cmd_translate_keys[$i]) {
 				$activeVol[$i] = "isActive"; break;
+			}
+		}
+
+		for($i = 0; $i<$volumeLevels; $i++) {
+			if($soundscapeVol == "global" .$cmd_translate_keys[$i]) {
+				$activeVolSoSe[$i] = "isActive"; break;
 			}
 		}
 ?>
@@ -44,11 +51,23 @@
   		<div class="Aligner-item Aligner-item--fixed">
 			<h1 class="noBox">&#128266;</h1>
 			 <!-- <h3>Momentaner Befehl: <?php //echo translateCommand($cmd_translate) ?></h3> -->
+			 <h2>Allgemeine Lautstärke</h2>
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
 				?>
 					<div class="item <?php echo $activeVol[$i] ?>">
 						<a href="index.php?command=<?php echo $cmd_translate_keys[$i]; ?>"><?php echo $cmd_translate[$cmd_translate_keys[$i]]; ?></a>
+					</div>
+				<?php endfor;
+				
+			?>
+			<h2>Soundscape</h2>
+			<?php
+				for($i = 0; $i<$volumeLevels; $i++): 
+
+				?>
+					<div class="item <?php echo $activeVolSoSe[$i] ?>">
+						<a href="index.php?command=global<?php echo $cmd_translate_keys[$i]; ?>"><?php echo $cmd_translate[$cmd_translate_keys[$i]]; ?></a>
 					</div>
 				<?php endfor;
 				

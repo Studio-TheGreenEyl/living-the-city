@@ -38,7 +38,8 @@
 		"stop" => "control",
 		"play" => "control",
 		"off" => "control",
-		"int" => "control"
+		"int" => "control",
+		"globalvol" => "soundscape"
 	);
 
 	// write into which file

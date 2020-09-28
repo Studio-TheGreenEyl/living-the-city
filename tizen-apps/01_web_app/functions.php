@@ -8,6 +8,10 @@
 		writeCommand($vol."-".$microtime, "command.txt");
 	}
 
+	function soundscape($vol) {
+		writeCommand($vol, "soundscape.txt");
+	}
+
 	function writeCommand($cmd, $fn) {
 		$filename = $fn;
 		if (is_writable($filename)) {
