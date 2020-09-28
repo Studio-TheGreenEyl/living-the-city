@@ -51,7 +51,6 @@
   		<div class="Aligner-item Aligner-item--fixed">
 			<h1 class="noBox">&#128266;</h1>
 			 <!-- <h3>Momentaner Befehl: <?php //echo translateCommand($cmd_translate) ?></h3> -->
-			 <h2>Allgemeine Lautstärke</h2>
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
 				?>
@@ -61,7 +60,7 @@
 				<?php endfor;
 				
 			?>
-			<h2>Soundscape</h2>
+			Soundscape
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
 
