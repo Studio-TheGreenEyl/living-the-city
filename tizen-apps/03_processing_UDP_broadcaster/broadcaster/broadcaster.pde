@@ -24,7 +24,7 @@ String toSend = "";
 PFont font;
 
 void setup() {
-  size(200,130);
+  size(260,130);
   surface.setLocation(0, 0);
   background(255);
   loadSettings();
@@ -40,6 +40,7 @@ void draw() {
     text("Broadcaster", 10, 20);
     timestamp = millis();
     lines = loadStrings(hostURL);
+    
     for (int i = 0 ; i < lines.length; i++) {
       if(lines[i].length() > 0) {
         split = split(lines[i], ":");
@@ -50,5 +51,18 @@ void draw() {
         }
       }
     }
+    
+    lines = loadStrings(hostURL+"?output=soundscape.txt");
+    for (int i = 0 ; i < lines.length; i++) {
+      if(lines[i].length() > 0) {
+        split = split(lines[i], ":");
+        if(split[0].equals("data")) {
+         toSend = trim(split[1]);
+         send(toSend);
+         text("Soundscape: " + toSend, 10, 60);
+        }
+      }
+    }
+    
   }  
 }
