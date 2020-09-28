@@ -18,9 +18,9 @@ var fileHandleRead;
 var foundPlaylist = false;
 var documentsDir;
 
-var volume = 0.75;
-var volumePage = 'http://192.168.178.129/tizen/server_event.php?output=volume.txt';
-var commandPage = 'http://192.168.178.129/tizen/server_event.php?output=command.txt';
+var volume = 0.8;
+var volumePage = 'http://192.168.15.2/server_event.php?output=volume.txt';
+var commandPage = 'http://192.168.15.2/server_event.php?output=command.txt';
 
 var langSwitch = 0;
 var canSwitch = true;

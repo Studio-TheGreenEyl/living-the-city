@@ -24,18 +24,113 @@ UOFkMrvkjg==</DigestValue>
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>aBDGc/GG6WsbeLcy7Hx/zF7YmC/O7qn4S/y2/iZhyb8HPm2t1HbnsnP4hZXqrXIxhQn6Q2IkZL7X
-ReOGafz53w==</DigestValue>
+<DigestValue>krzngc3cEhhs930v6b/E9y9R8pZxRWV7Pn/9d53BI8zHA8cS8nSZqTGkHf5RJn9zTL0J02z97iCx
+Kt5DqNQzcw==</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>a51hcSVjifYQHduqq+zCbX6FOndfZdS38zDARMJmi3xkVrpS2akop4g120aredvaJL++dN0N9rwJ
-lXJPDxNwcA==</DigestValue>
+<DigestValue>Hl3jMA19pddsgdyNiOKdCl4LDrV7mmbWW4TjOMXwDQxthTqhRtXWZMLBraHu4KiFcDR/q+tNRIlj
+aUT34sOLxg==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FLKEuropaGroteskCity-Bold.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>+64FmS7LXeqtu37xksmy4O7esJbwnAQ51cZxYRf2Bd+lTSHJ5uT1As0UogkIYUhNQ75M3b9o/ajN
+ANnWf7eVSg==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FLKEuropaGroteskCity-Bold.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Vkf0iFsWCLsVM5oZ/7KpHbLQki1Ym3czC9/3+5NszvjY4fEuecEvMEFLdq8Cp1ZveAAVtdT1K4uO
+vO3gL4tj3A==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FLKEuropaGroteskCity-Medium.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IxzGUl2MtjUDIX9s4Tu7ZT8MbD3LTQPxpSYzNEN2AJ6DwqNEne8vKjQqH+ABOdNQDP2Bbz/mBV/v
+wxZCoYe33g==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FLKEuropaGroteskCity-Medium.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>px0bScSLERAjFZiOVzqT5Wooji5O6rgzqL8YdO4z4LjMvIDoTznkQK0A2dmrH+LKmjmLCEFQZQON
+JH3em+WpGQ==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Black.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IfwTsEK+R3G6T8VvD83BqNdH8HJI9UZqZ9sXbyIiVj+GRtPJzt3/NxrOHicYLssLYAPFm9hy2doR
+zso6WfSiWg==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Black.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>kjLjUcFT7dkMC58/4+Af/WoLaykPsbJFo/zCZteYpHPhkROUGPj56F+qf8TplKZfhGPu5tH1ggSc
+2Xe8xE+ovg==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Bold.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>1cCHK9WYDcrp8ikVQhEzvC6WTPxEqpIkmBv7z9ShR9QjE1arQJ1N/0Gz6hFH5OcSJkw6BAWtkDVi
+UADYMHnF6A==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Bold.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ain+1KWbEuZlohygI/TmubLaxWFrLFicWkZMK+RWf2zddUt9YVAITtzEbmtZAWbXZW7pFiwmDUxr
+q8O133gOsQ==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Light.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>TRhzb8dO0KX7oXR8POJKcrBr4SEfZeMa1jxiUR0z5gi2Um2TkRO6daw6XIek/BIK8lJBZZ8tl6z9
+h6Wewv5aqQ==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Light.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vRsluY466k7hAJYNG+8MkIPAZP7RLWTfZF6ntngPaYYYFxZs/KvLeLkrq7VAF2iaHFcFUB5E/YHp
+JyWpajul7Q==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Medium.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>rCfm7NESo7++7mEfE3h7649F+3/lzU8SefRftGkv6B7HGmtzJ1+hHZ6Gm/lXB/KS8eNAnrV6Lidw
+XwnyLjv13w==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Medium.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>QAyvx1mjN0VU5XqzC59Jfq6qik7IYHkeVYFNrwRmrWoJZQkEvNlg4WGqg7AUsTFPpZVherSWpqZV
+F1qqPLQ7KQ==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Regular.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>UHcBAB0IW0v6e4FDxGBx4S7GQ/ZdkAeyq/rnsxqd0xpOQyGgenh2UC8LDjAjgJwZqHewZ9bCpaFa
+EA5JKpKDeg==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2FTheinhardt-Regular.woff2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>R12TfFiOxC0NWek3lqhJOSuKAkxP7MUGcwcZPqTE/j3GT/YyQNUQiO+FnsGlqOo+OGtsZr+24+EW
+R3DX19hW/w==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2Ftransfonter.org-20200910-091905%2Fdemo.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YjzpYFU3vvVRgFGJ+WExJf7XqCMQT5427U2qG0MI6oN7KCG6rrRcGEdwr4qPukBfhZw1vHvXhGEe
+jqaW2iEdUA==</DigestValue>
+</Reference>
+<Reference URI="css%2Fassets%2Ftransfonter.org-20200910-091905%2Fstylesheet.css">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>J6uuZrdHnjud1zg05ViyCCINBh/Lzb2bM4bVXbe2+KULYNdOHNCZfDf7Kio/nORMmOQe90hGGUUr
+V9Jgh/47gw==</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>JvsblHSRtr+SEL0RW/6i5ixiOoWevrzeXEkAATymlPHszBfGWXFjgQZo8WKWm3yo0P3mitp/iydP
-Kj0sl4Wn8A==</DigestValue>
+<DigestValue>NIRSVXjBpk8Vjq+J5+JYt3b91B+fJpYjY5AZtNSBnPbsj67OWZ4ZTr6qYjbJuUvC6S387khGyi3g
+QkAu2yGqLg==</DigestValue>
+</Reference>
+<Reference URI="fallback_video%2F200910%20fallback.aep">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0dEBhzFW+WgsyqUadqx5JjIpEwA/yRIWUVFChocJh3KWBM21eGV29GYVBoS0by4VdmfXw9ptGKb8
+3QXCqkVVSw==</DigestValue>
+</Reference>
+<Reference URI="fallback_video%2F200910%20fallback_AME%2FtmpAEtoAMEProject-Komp%201.aep">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0dEBhzFW+WgsyqUadqx5JjIpEwA/yRIWUVFChocJh3KWBM21eGV29GYVBoS0by4VdmfXw9ptGKb8
+3QXCqkVVSw==</DigestValue>
+</Reference>
+<Reference URI="fallback_video%2Fdachmarke.psd">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>UA5haNu8ENCidor9bku6n5e7QTsOKFTzmFIo6PbpycuLPVyCWebvo1PNmmeuy/T7AHlc4nlz1ugF
+ng35hGv+Ng==</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -49,18 +144,43 @@ xXbY9fX1EQ==</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>P8aTFtzMF8ukCFIdW9+EiNWU7NKWpCD7WoCfOAF8/RjQ0VEHPntsXyXKQYldwkXt9TosU8XXoWia
-oViM9hnWnw==</DigestValue>
+<DigestValue>Bf9PAqQsalVX8ivHvBrITEvtzkJ20wex5xBqF67yS+h63VOy4n4uy13r15vi4XLWGg8WxRVHghsG
+6B6+sQeQ2g==</DigestValue>
 </Reference>
-<Reference URI="js%2Fmain.js">
+<Reference URI="js%2Ftge.file_handling.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>CUNjpO9HVlLiTeZ15tAvcX0HdlsJ0x6K/vCL3BFFtP2EWzgEHuNtpXbTDEhdF0td2IOYyBay/mP4
-kiZqtd+2TA==</DigestValue>
+<DigestValue>ZrBFOzc86XSsDll2bsshXZSCB1z7Q3obLh4+ItEsz5bvJv1FM89MmhpJwNjAjvU1mqhU/UY0JWDe
+x/Bdows17w==</DigestValue>
+</Reference>
+<Reference URI="js%2Ftge.main.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>yxZsjuwhvvpj5HowEloylFeyjM25KCep/zaNEu6tFw7oi0mdFN5QOTd+uFqUgvtib2WjzCUVKu/a
+dhgw5QRY9Q==</DigestValue>
+</Reference>
+<Reference URI="js%2Ftge.server_communication.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGl
+ODJ6+SfaPg==</DigestValue>
+</Reference>
+<Reference URI="js%2Ftge.state_machine.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Jh3+PyzYqFfVEl1LdhTcoYwap2KT5YXUsHJ3xxmgJzH49IqBn/rb5d7XlSQNBj6607tV6OeIL2c7
+oDtfRqjsCA==</DigestValue>
+</Reference>
+<Reference URI="js%2Ftge.variables.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ADLOrjIwVaeyqChtle2tWuGwfLJzdkftfGiI9K6txEnpaTyEKIv8cYxb2rIMn9QaEtKzInyCs+08
+0PKFGIZbkg==</DigestValue>
+</Reference>
+<Reference URI="js%2Ftge.video_handling.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>1x4wCk4YEvc0fMv9tG+qPcOjwgBUyYd7SmXvIgijc+iE4kmDk+WQ60xejyjg11+tYEP09u8zFt3+
+f6j9qH+AFQ==</DigestValue>
 </Reference>
 <Reference URI="sssp_config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>gY21hdWoQZTfeHeMBmKF3bm+B9+/neubp5qs3HyRAbQ7DWw9RkrtMiZAGiJ/sbEO8qG1G+18mKLZ
-/MN2Pi9zig==</DigestValue>
+<DigestValue>Bx+pWu/2lsEKwWr2ckFJ9OGeoG4mbLBinZnMQq3v+HRlWqAcf+I8Xjjwpujlv9eGkzb3wUa381fo
+WBF9LeTiRA==</DigestValue>
 </Reference>
 <Reference URI="tge_app.wgt">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -77,9 +197,9 @@ GyvKX9Snig==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-YCPjvP4Plc9TiVEz6M3twn4lrWLu/mrLcDRVqcHNcFyx3HXTHedGVFL4etmOWV9MJBEkHHO/isD9
-zOPrni1ANQCUzqPk1r3D5tU7Ug98rYJuVAkm9GzfShduv8ZzHFhiVUu9SIZRR6Fo/wK2PyMWFbsn
-06f23vI604JQcpPqhDw=
+ZU1cVyXGNFr1dIbqj3NpLV4BHOh4QqcGAayx1gMfEbVyinofJldqp/g9fqLLG3ifhwkvfgNq7BAP
+ibxF1ukmKrSQSvU7CReQoJ1E+SFEMsOz1Yl2MQjNQuVhVyEbstsCQ3spK9MS76CJU+t4UX+mBZVB
+S9n0nHDvavKO0uKrwZE=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

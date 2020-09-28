@@ -42,7 +42,10 @@ void setupUdp() {
 void send(String message) {
     if (!udpSet) return;
     println("→ message: " + message);
+    
     udp.send( message, broadcastIP, port );
+    message = message + ";\n";
+    udp.send( message, broadcastIP, 6000 );
 }
 
 void receive( byte[] data, String ip, int port ) {  // <-- extended handler
