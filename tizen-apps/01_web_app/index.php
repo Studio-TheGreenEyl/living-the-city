@@ -40,7 +40,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.48, user-scalable=no">
     <title>Monitor Steuerung</title>
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -48,8 +48,10 @@
   </head>
   <body>
   	<div class="Aligner">
-  		<div class="Aligner-item Aligner-item--fixed">
 			<h1 class="noBox">&#128266;</h1>
+  		<table class="Aligner-item Aligner-item--fixed"><tr>
+  			<td class="control">
+  			Ausstellung
 			 <!-- <h3>Momentaner Befehl: <?php //echo translateCommand($cmd_translate) ?></h3> -->
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
@@ -59,7 +61,8 @@
 					</div>
 				<?php endfor;
 				
-			?>
+			?></td>
+			<td class="control">
 			Soundscape
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
@@ -70,7 +73,8 @@
 					</div>
 				<?php endfor;
 				
-			?>
+			?></td>
+		</tr>
 			<!-- 
 			<div class="item <?php echo $activeVol[0] ?>"><a href="index.php?command=vol-100">100%</a></div>
 			<div class="item <?php echo $activeVol[1] ?>"><a href="index.php?command=vol-75">75%</a></div>
@@ -96,7 +100,7 @@
 			<div class="item <?php //echo $activeVol[4] ?>"><a href="index.php?command=off">Herunterfahren</a></div>
 		-->
 			
-	</div>
+	</table>
   </body>
 </html>
 
