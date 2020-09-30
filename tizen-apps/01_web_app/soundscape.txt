@@ -1,1 +1,1 @@
-globalvol-90
+globalvol-50

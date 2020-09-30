@@ -58,6 +58,19 @@ td.control {
     margin-top: 5px;
 }
 
+.item.target {
+    border-color: #5EA539;
+    color: #5EA539;
+}
+
+.item.target a {
+    color: #5EA539;
+}
+
+.isActive.item.target {
+    background-color: #5EA539;
+}
+
 .isActive {
     background-color: #000;
     color: #fff;
@@ -69,7 +82,7 @@ td.control {
 }
 
 .isActive a {
-    color: #fff;
+    color: #fff !important;
 }
 
 /** solved by flexbox **/

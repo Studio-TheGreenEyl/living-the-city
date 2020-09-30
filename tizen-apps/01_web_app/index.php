@@ -56,7 +56,7 @@
 			<?php
 				for($i = 0; $i<$volumeLevels; $i++): 
 				?>
-					<div class="item <?php echo $activeVol[$i] ?>">
+					<div class="item <?php echo $activeVol[$i] ?><?php if($i==2) echo ' target' ?>">
 						<a href="index.php?command=<?php echo $cmd_translate_keys[$i]; ?>"><?php echo $cmd_translate[$cmd_translate_keys[$i]]; ?></a>
 					</div>
 				<?php endfor;
@@ -68,7 +68,7 @@
 				for($i = 0; $i<$volumeLevels; $i++): 
 
 				?>
-					<div class="item <?php echo $activeVolSoSe[$i] ?>">
+					<div class="item <?php echo $activeVolSoSe[$i] ?><?php if($i==5) echo ' target' ?>">
 						<a href="index.php?command=global<?php echo $cmd_translate_keys[$i]; ?>"><?php echo $cmd_translate[$cmd_translate_keys[$i]]; ?></a>
 					</div>
 				<?php endfor;
