@@ -44,6 +44,12 @@ void send(String message) {
     println("→ message: " + message);
     
     udp.send( message, broadcastIP, port );
+}
+
+void sendSoundscape(String message) {
+    if (!udpSet) return;
+    println("→ message: " + message);
+    
     message = message + ";\n";
     udp.send( message, broadcastIP, 6000 );
 }

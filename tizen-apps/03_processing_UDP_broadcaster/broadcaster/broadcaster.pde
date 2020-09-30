@@ -58,7 +58,7 @@ void draw() {
         split = split(lines[i], ":");
         if(split[0].equals("data")) {
          toSend = trim(split[1]);
-         send(toSend);
+         sendSoundscape(toSend);
          text("Soundscape: " + toSend, 10, 60);
         }
       }
